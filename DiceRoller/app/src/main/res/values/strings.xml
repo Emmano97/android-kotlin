@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="happy_birthday_text">Happy Birthday, Roger!</string>
+    <string name="signature_text">From Emmano.</string>
+    <string name="roll">Roll</string>
+    <string name="outcome_image">outcome image</string>
+    <string name="roll_image">roll image</string>
+    <string name="regenerate">regenerate</string>
+</resources>
