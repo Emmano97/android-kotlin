@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+
+
         val view = binding.root
         //binding.totalAffirmations.text = Datasource().loadAffirmations().size.toString()
         setContentView(view)

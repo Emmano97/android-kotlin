@@ -23,12 +23,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.accessibility.AccessibilityNodeInfo
-import android.widget.Button
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
-import com.example.wordsapp.databinding.ActivityDetailBinding
 import com.example.wordsapp.databinding.ItemViewBinding
-import java.net.URI
 
 /**
  * Adapter for the [RecyclerView] in [DetailActivity].
@@ -86,7 +83,7 @@ class WordAdapter(private val letterId: String, context: Context) :
 
         holder.button.setOnClickListener{
             val context = it.context
-            val queryUrl: Uri = Uri.parse("${DetailActivity.SEARCH_PREFIX}${item}")
+            val queryUrl: Uri = Uri.parse("${WordListFragment.SEARCH_PREFIX}${item}")
             val intent = Intent(Intent.ACTION_VIEW, queryUrl)
             context.startActivity(intent)
         }
