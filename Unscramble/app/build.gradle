@@ -25,7 +25,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.android.unscramble"
+        applicationId "com.example.android.worthit"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
@@ -48,7 +48,7 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
-        viewBinding = true
+        dataBinding = true
     }
 }
 

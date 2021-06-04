@@ -1,4 +1,4 @@
-package com.example.android.unscramble.ui.game
+package com.example.android.worthit.ui.game
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -71,11 +71,6 @@ class GameViewModel: ViewModel() {
         _currentWordCount.value = 0
         wordsList.clear()
         getNextWord()
-    }
-
-    override fun onCleared() {
-        super.onCleared()
-        Log.d(TAG, "GameViewModel is Destroyed")
     }
 
 
